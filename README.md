@@ -1,3 +1,8 @@
 # domino6658.github.io
 
-This is a test
+Our website for the computing assessment
+
+Team members:
+- Tanush
+- Nathan
+- Dominic
