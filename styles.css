@@ -5,6 +5,14 @@ body {
     background-color: #e7ffdc;
 
 }
+
+.very-heavy{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
 .heavy {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
@@ -12,7 +20,14 @@ body {
     font-style: normal;
 }
 
-.light {
+.medium {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 275;
+    font-style: normal;
+}
+
+  .light {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 150;
@@ -94,22 +109,20 @@ body {
 }
 
 
+
+
 .header-container{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 60px;
     padding-right: 60px;
     width: 100%;
-    /* height:90px; */
     column-gap: 40px;
     row-gap: 10px;
 
     flex-wrap:nowrap;
-    /* padding-right: 30px; */
     text-align: center;
-    display: flex; /* Use flexbox for vertical centering */
-    /* flex-wrap:wrap; */
-    /* align-items: center; */
+    display: flex;
     justify-content: space-between;
 }
 
@@ -165,10 +178,49 @@ body {
     border-radius: 0px 0px 35px 35px;
 }
 
+
+.content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 100px;
+    display: flex;
+    /* width: 1vw; */
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-container {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-preview {
+    border-radius: 30px;
+    border: 10px solid #11111165;
+    backdrop-filter: blur(3px);
+    background-color: #0000005b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 315px;
+    text-align: center;
+    color: #ffffff;
+}
+
 .welcome {
 
     position: relative;
-    margin-top: 100px;
+    
     height: 300px;
     padding-left: 60px;
     padding-right: 60px;
@@ -188,8 +240,6 @@ body {
 .h {
     position: relative;
     font-size: 36px;
-    color: #d1ffc4;
-    font-weight: 600;
     margin: 0;
     cursor: default;
 }
@@ -209,4 +259,5 @@ body {
     align-items: center;
     width: 800px;
     text-align: center;
+    color: #d1ffc4;
 }
