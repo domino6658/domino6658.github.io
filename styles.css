@@ -191,6 +191,7 @@ body {
 }
 
 .preview-container {
+    
     display: flex;
     gap: 130px;
     align-items: center;
@@ -199,6 +200,8 @@ body {
 
 
 .box-preview {
+    gap: 20px;
+    flex-direction: column;
     border-radius: 30px;
     border: 10px solid #11111165;
     backdrop-filter: blur(3px);
@@ -240,6 +243,12 @@ body {
 .h {
     position: relative;
     font-size: 36px;
+    margin: 0;
+    cursor: default;
+}
+.h-title {
+    position: relative;
+    font-size: 45px;
     margin: 0;
     cursor: default;
 }
