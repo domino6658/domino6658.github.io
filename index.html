@@ -4,6 +4,17 @@
         <title>Climate Ramifications</title>
         <link rel="icon" type="image/gif" href="pngegg.ico" />
         <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js"></script>
+        <script>
+            document.documentElement.classList.add('fonts-loading');
+            const fontOutfit = new FontFaceObserver('Outfit');
+            const fontInter = new FontFaceObserver('Inter');
+            Promise.all([fontOutfit.load(), fontInter.load()]).then(function() {
+                document.documentElement.classList.remove('fonts-loading');
+            }).catch(function() {
+                document.documentElement.classList.remove('fonts-loading');
+            });
+        </script>
     </head>
     <body>
         <img src="unnamed.jpg" class="image">
