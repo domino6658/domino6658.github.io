@@ -5,6 +5,24 @@ body {
     margin: 0;
     background-color: #e7ffdc;
 }
+.hidden {
+    opacity: 0;
+}
+
+@keyframes flyInFromBeneath {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fly-in-from-beneath {
+    animation: flyInFromBeneath 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Typography */
 .very-heavy {
@@ -167,7 +185,6 @@ body {
     height: 700px;
     object-fit: cover;
     object-position: center;
-    background-image: url(bg.jpg);
     z-index: 0;
     border-radius: 0 0 35px 35px;
 }
@@ -177,6 +194,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 130px;
+    
+    padding-bottom: 100px;
 }
 
 .box-preview {
@@ -196,6 +215,7 @@ body {
     color: #ffffff;
     flex-wrap: nowrap;
 }
+
 
 .welcome {
     position: relative;
