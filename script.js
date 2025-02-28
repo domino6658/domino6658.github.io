@@ -13,12 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
+        offset = 0;
         entries.forEach((entry, index) => {
             delay = index * 200;
-
-            if (index === 2) {
-                delay -= 200; // Delay the third element by 200ms less to make it appear more naturally
+            // console.log(index)
+            if (entry.target.classList.contains('go-with-previous')) {
+                offset += 1;
             }
+            
+            delay -= 200*offset; 
+            
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.remove('hidden');
