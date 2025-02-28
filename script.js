@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const elementsToAnimate = document.querySelectorAll('.box, .box-preview');
+    const elementsToAnimate = document.querySelectorAll('.fly-in');
 
     // Add the hidden and backdrop-blur classes to all elements to animate
     elementsToAnimate.forEach(element => {
