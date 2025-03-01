@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.remove('hidden');
-                    entry.target.classList.add('fly-in-from-beneath');
+                    if (entry.target.classList.contains('nav-link-button')) {
+                        entry.target.classList.add('fly-in-from-top-left');
+                    } else {
+                        entry.target.classList.add('fly-in-from-beneath');
+                    }
                     observer.unobserve(entry.target); // Stop observing once the animation is triggered
                 }, delay); // Delay each element by 200ms multiplied by its index
             }

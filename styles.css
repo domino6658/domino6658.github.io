@@ -25,6 +25,23 @@ body {
     animation: flyInFromBeneath 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@keyframes flyInFromTopLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, -100%);
+        background-color: #14733a;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        background-color: #156334;
+    }
+}
+
+.fly-in-from-top-left {
+    animation: flyInFromTopLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Typography */
 .very-heavy {
     font-family: "Outfit", serif;
@@ -136,6 +153,20 @@ body {
 .nav-links {
     display: flex;
     gap: 30px;
+}
+
+.nav-link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14733a;
+    padding: 7px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link-button:hover {
+    background-color: #156334;
 }
 
 .title {
