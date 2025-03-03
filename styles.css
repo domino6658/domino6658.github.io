@@ -43,33 +43,54 @@ body {
 }
 
 /* Typography */
-.very-heavy {
+.weight-very-heavy {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
 }
 
-.heavy {
+.weight-heavy {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-.medium {
+.weight-medium {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 275;
     font-style: normal;
 }
 
-.light {
+.weight-light {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 150;
     font-style: normal;
 }
+
+.size-very-large {
+    font-size: 60px;
+    margin: 0;
+}
+
+.size-large {
+    font-size: 45px;
+    margin: 0;
+}
+
+.size-medium {
+    font-size: 32px;
+    margin: 0;
+}
+
+.size-small {
+    font-size: 20px;
+    margin: 0;
+}
+
 
 /* Header */
 .header-background {
