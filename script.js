@@ -26,9 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.remove('hidden');
-                    if (entry.target.classList.contains('nav-link-button')) {
-                        entry.target.classList.add('fly-in-from-top-left');
-                    } else if (entry.target.classList.contains('fade-in')) {
+                    if (entry.target.classList.contains('fade-in')) {
                         entry.target.classList.add('fade-in');
                     } else {
                         entry.target.classList.add('fly-in-from-beneath');

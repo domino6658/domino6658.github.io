@@ -25,23 +25,6 @@ body {
     animation: flyInFromBeneath 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes flyInFromTopLeft {
-    0% {
-        opacity: 0;
-        transform: translate(-100%, -100%);
-        background-color: #14733a;
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-        background-color: #156334;
-    }
-}
-
-.fly-in-from-top-left {
-    animation: flyInFromTopLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
