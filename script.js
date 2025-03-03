@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const elementsToAnimate = document.querySelectorAll('.fly-in');
+    const elementsToAnimate = document.querySelectorAll('.fly-in, .fade-in');
 
     // Add the hidden and backdrop-blur classes to all elements to animate
     elementsToAnimate.forEach(element => {
@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     entry.target.classList.remove('hidden');
                     if (entry.target.classList.contains('nav-link-button')) {
                         entry.target.classList.add('fly-in-from-top-left');
+                    } else if (entry.target.classList.contains('fade-in')) {
+                        entry.target.classList.add('fade-in');
                     } else {
                         entry.target.classList.add('fly-in-from-beneath');
                     }

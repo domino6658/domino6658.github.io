@@ -42,6 +42,19 @@ body {
     animation: flyInFromTopLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
 /* Typography */
 .weight-very-heavy {
     font-family: "Outfit", serif;
