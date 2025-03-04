@@ -8,3 +8,13 @@ Team members:
 - Tanush
 - Nathan
 - Dominic
+To Do:
+* Tanush
+    * Do the data analysis for each of the pages
+    * Add graphs to each page
+* Nathan
+    * Help Tanush with his job
+    * Do the about us page
+* Dominic
+    * Make banner shorter on data pages
+    * Finish structure of data pages
