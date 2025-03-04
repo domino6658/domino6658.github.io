@@ -4,6 +4,7 @@
         <title>Climate Company 32</title>
         <link rel="icon" type="image/gif" href="assets/logo.ico" />
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="dropdwn.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js"></script>
         <script src="preload.js"></script>
     </head>
@@ -29,9 +30,13 @@
                                     <h1 class="weight-heavy">About Us</h1>
                                 </div>
                             </a>
-                            <a href="" target="_self">
-                                <div class="nav-link-button">
-                                    <h1 class="weight-heavy">Our Data</h1>
+                                <div class="dropdown nav-link-button">
+                                    <button onclick="dropClick()" class="dropbtn">Our Data</button>
+                                    <div id="myDropdown" class="dropdown-content weight-medium">
+                                    <a href="#">Temperature</a>
+                                    <a href="#">CO2</a>
+                                    <a href="#">Sea Level & pH</a>
+                                    </div>
                                 </div>
                             </a>
                         </div>
