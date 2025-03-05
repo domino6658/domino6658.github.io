@@ -16,5 +16,6 @@ To Do:
     * Help Tanush with his job
     * Do the about us page
 * Dominic
-    * Make banner shorter on data pages
-    * Finish structure of data pages
+    * ~~Make banner shorter on data pages~~
+    * ~~Finish structure of data pages~~
+    * Finish structure of about us page
